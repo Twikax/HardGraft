@@ -1,2 +1,2 @@
 # HardGraft
-Notre première intégration
+Design and frontend school project.

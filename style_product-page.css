@@ -1,0 +1,490 @@
+* { margin: 0; }
+body {
+  font-family: 'acumin-pro', sans-serif;
+  font-size: 18px;
+  color: #88847F;
+  line-height: 1.44;
+  margin: 0;
+}
+.titlesans {
+  font-family: 'acumin-pro', sans-serif;
+  font-size: 24px;
+  color: #2D2825;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  margin: 0;
+}
+.titlesans--up {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.hide {
+  display: none;
+}
+.title a, .titlesans a {
+  text-decoration: none;
+  color: #2D2825;
+}
+
+/*Les liens*/
+
+.logo a {
+  background-image: url(img/logo-hardgraft.png);
+  background-repeat: no-repeat;
+  width: 77px;
+  height: 50px;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*image*/
+
+.section--main {
+  background: url(img/bg-glass.png) no-repeat left top, #FAF8F6;
+  padding: 40px 0;
+}
+.section--footer {
+  background: url(img/bg-footer.png)
+  no-repeat #363433 70% bottom;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+.credit {
+  background-color: #141817;
+  background-color: rgba(26,24,23,.4);
+}
+
+/*les listes*/
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav__el, .btn--card {
+  float: left;
+  margin-left: 40px;
+}
+.nav__el a, .btn--card a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2D2825;
+  text-decoration: none;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  opacity: .4;
+}
+.nav__el--actif a, .nav__el a:hover, .nav__el a:focus {
+  opacity: 1;
+  background: url(img/bg-nav.png) repeat-x left 60px;
+  outline: 0;
+}
+.footer__el a {
+  color: #fff;
+  text-decoration: none;
+}
+.btn--card a {
+  background-color: #d9c6ac;
+  color: rgba(46,41,38,.6);
+  opacity: 1;
+  padding: 10px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+}
+.btn--card a:before {
+  content: "";
+  background: url(img/cart.png) no-repeat bottom;
+  background-size: 90%;
+  width: 16px;
+  height: 19px;
+  margin-right: 8px;
+}
+
+/*layout*/
+
+header {
+  position: relative;
+  height: 80px;	
+}
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  margin: 0;
+}
+.nav {
+  float: right;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.product {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.center {
+  text-align: center;
+}
+.col3 {
+  /* 4 col de la grille */
+  width: 374px;
+  margin: 80px 39px 80px 0;
+  float: left;
+}
+.col4 {
+  /* 3 col de la grille */
+  width: 270px;
+  margin: 80px 0 80px 0;
+  float: left;	
+}
+.fr { float: right; }
+.fl { float: left; }
+.credit {
+  clear: both;
+  height: 37px;
+  line-height: 37px;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+.btn--whishlist {
+  color: #a7a4a2;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url(img/icon-heart.png) left center no-repeat;
+  padding-left: 28px;
+  height: 14px;
+  display: inline-block;
+  margin-top: 26px;
+  font-size: 10px;
+}
+.btn--whishlist--active {
+  background-image: url(img/icon-heart-full.png);
+  color: #ED1433;
+}
+.btn--add {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #d9c6ac;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: bold;
+  color: #2D2825;
+  font-size: 14px;
+}
+.btn--add span {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  text-align: right;
+  width: 150px;
+  color: #a7a4a2;
+  font-size: 13px;
+  cursor: default;
+}
+
+.goes-well__products {
+  display: flex;
+  justify-content: space-between;
+}
+.goes-well__product {
+  box-shadow: 0 0 40px rgba(0,0,0,.1);
+}
+.product__img {
+  display: block;
+}
+.product__info {
+  background-color: white;
+  padding: 15px;
+  position: relative;
+}
+.titlesans__product {
+  font-size: 18px;
+}
+
+.current-product {
+  display: flex;
+  margin-bottom: 20px;
+}
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.breadcrumbs--separator {
+  font-weight: bold;
+  margin: 0 10px;
+}
+.breadcrumbs--item {
+  text-decoration: none;
+  color: #88847F;
+}
+.breadcrumbs--item--active {
+  color: #2e2926;
+}
+
+.current-product__main-img {
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,.1);
+}
+.current-product__img-selector {
+  position: relative;
+}
+.current-product__img-container {
+  display: flex;
+  justify-content: space-between;
+}
+.current-product__img-selector__next-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 83px;
+  background:
+    url(img/icons/angle-right.png) no-repeat 80% center,
+    linear-gradient(to right, rgba(255,255,255,0) 0%, #FAF8F6 80%);
+  height: 100%;
+}
+.current-product__img-selector__next-img:hover {
+  background:
+    url(img/icons/angle-right.png) no-repeat 80% center,
+    linear-gradient(to right, rgba(255,255,255,0) 0%, #FAF8F6 100%);
+  cursor: pointer;
+}
+.current-product__img {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 166px;
+  height: 93px;
+}
+.current-product__img:hover {
+  border: 1px solid black;
+}
+.current-product__img--selected {
+  border: 3px solid black;
+}
+
+.current-product__details {
+  width: 374px;
+  margin-left: 40px;
+}
+
+.current-product__name {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #2e2926;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+}
+
+.current-product__selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.current-product__selector__name {
+  text-transform: uppercase;
+}
+.current-product__selector select {
+  border: 1px solid #2e2926;
+  border-radius: 4px;
+  font-family: 'acumin-pro', sans-serif;
+  font-size: 12px;
+  padding: 0 0 1px 5px;
+  background: none;
+  font-weight: bold;
+  width: 100%;
+}
+.current-product__selector select:hover {
+  background: white;
+}
+
+.current-product__selector {
+  color: #2e2926;
+  width: 168px;
+}
+.current-product__selector--disabled {
+  color: #88847F;
+}
+.current-product__selector--disabled select:hover {
+  background: none;
+}
+.current-product__selector--disabled select {
+  border-color: #88847F;
+}
+
+.current-product__add-to {
+  display: flex;
+  align-items: center;
+}
+.current-product__add-to__card {
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #d9c6ac;
+  font-size: 20px;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.current-product__add-to__card span {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  font-size: 16px;
+  color: #a7a4a2;
+}
+.current-product__add-to__wishlist {
+  width: 34px;
+  height: 30px;
+  background: url(img/product-page/hearth.png);
+  border: 0;
+  cursor: pointer;
+}
+
+.product-info__wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.product-info {
+  display: flex;
+  position: absolute;
+}
+.product-info__social {
+  margin-right: 40px;
+}
+.product-info__details {
+  width: 374px;
+}
+.product-info__social-imgs {
+  display: flex;
+  width: 788px;
+  justify-content: space-between;
+}
+.product-info__title {
+  color: #2e2926;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-info__show-more {
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(rgba(255,255,255,0) 0%, #FAF8F6 70%);
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.product-info__show-more p {
+  color: #2e2926;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.product-info__show-more p:before {
+  content: url(img/icons/angle-down.png);
+  margin-right: 10px;
+}
+.product-info__show-more p:after {
+  content: url(img/icons/angle-down.png);
+  margin-left: 10px;
+}
+.product-info__show-more:hover {
+  background: linear-gradient(rgba(255,255,255,0) 0%, #FAF8F6 90%);
+  cursor: pointer;
+}
+.section--goes-well {
+  padding: 40px 0;
+}
+.goes-well__title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  color: #2e2926;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.nav--footer {
+  columns: 104px 2;
+  width: 374px;
+}
+.footer__title {
+  margin-bottom: 20px;
+  color: #FFF;
+}
+.footer__el {
+  margin-bottom: 4px;
+}
+.newsletter-form {
+  display: flex;
+}
+.newsletter-form__el {
+  border: 1px solid #868585;
+  background: rgba(134,133,133,.3);
+}
+.newsletter-form__el--input {
+  height: 45px;
+  padding-left: 20px;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  width: 271px;
+}
+.newsletter-form__el--submit {
+  border-left: 0;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'acumin-pro', sans-serif;
+  width: 104px;
+  cursor: pointer;
+}
+.newsletter-form__el--submit:hover {
+  background: rgba(134,133,133,.6);
+}
+.address__el:first-child {
+  margin-bottom: 20px;
+}
+.address__el a {
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+}
+.credit__el {
+  text-transform: uppercase;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: bold;
+}
+.credit__el a {
+  text-decoration: none;
+  color: white;
+}
+.credit__el:last-child a {
+  color: #aaa9a9;
+}

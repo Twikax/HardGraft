@@ -393,6 +393,7 @@ header {
 .product-info__show-more {
   position: absolute;
   top: 110px;
+  right: 0;
   width: 100%;
   height: 110px;
   background: linear-gradient(rgba(255,255,255,0) 0%, #FAF8F6 70%);
@@ -433,6 +434,8 @@ header {
 
 .nav--footer {
   columns: 104px 2;
+  -moz-columns: 104px 2;
+  -webkit-columns: 104px 2;
   width: 374px;
 }
 .footer__title {

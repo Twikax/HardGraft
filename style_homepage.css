@@ -361,6 +361,8 @@ header {
 }
 .nav--footer {
   columns: 104px 2;
+  -moz-columns: 104px 2;
+  -webkit-columns: 104px 2;
   width: 374px;
 }
 .footer__title {
